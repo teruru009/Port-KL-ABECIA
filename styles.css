@@ -50,7 +50,7 @@ body {
 }
 /*-------------------parallax-------------*/
 .parallax-header {
-    background-image: url(images/sand.JPG);
+    background-image: url(images/sand.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

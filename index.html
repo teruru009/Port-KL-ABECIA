@@ -122,43 +122,54 @@
     </div>
 </div>
 <div class="string"></div>
-<!--------------------portfolio----------------->
+<!-- --------------------portfolio----------------->
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-i.png">
+                <img src="images/Untitled design (16).png">
                 <div class="layer">
-                    <h3>Publication</h3>
-                    <p>"Hana," my debut book, weaves storytelling and poetry into a tapestry of emotions and experiences. 
-                        The title, "Hana," meaning 'blossom' in Japanese, mirrors the vibrancy and delicacy of the tales and 
-                        verses within. It's an exploration of my experiences that encourages self-reflection in its readers.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Galleria</h3>
+                    <p>An online art gallery that consist of collections of my artworks back in I was in college. It is one of my early work
+                        that I have created. 
+                    </p>
+                        
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-ii.png">
+                <img src="images/Untitled design (21).png">
                 <div class="layer">
-                    <h3>Multimedia</h3>
-                    <p>I'm deeply passionate about multimedia, which allows me to combine various media forms and create immersive 
-                        experiences, telling compelling stories and engaging audiences on visual aesthetics. This passion drives 
-                        me to push creative boundaries and make a lasting impact through visual expression.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Social Media Dashboard</h3>
+                    <p>This dashboard is created to trach the activities of the social media platforms for my first intership. When connected to the API' 
+                        it will display the user's social media activities real time without checking each paltforms manually. 
+                    </p>
+                        
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-iii.png">
                 <div class="layer">
-                    <h3>UX/UI Design</h3>
+                    <h3>Attendance Monitoring System</h3>
+                    <p>I thrive on blending creativity with 
+                        user-centered design, striving to create intuitive and visually appealing digital experiences. I led the revamping 
+                    project of this web application for ease of use. </p>
+                       
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/Untitled design (19).png">
+                <div class="layer">
+                    <h3>Genius Swap</h3>
                     <p>My passion for UX/UI design was ignited during my internship at CSK Corp. I thrive on blending creativity with 
-                        user-centered design, striving to create intuitive and visually appealing digital experiences. It's a field that 
-                        excites me, where I constantly aim to enhance user satisfaction and accessibility.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        user-centered design, striving to create intuitive and visually appealing digital experiences. I led the revamping 
+                    project of this web application for ease of use </p>
+                        
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        
     </div>
 </div>
 <div class="string"></div>
@@ -241,6 +252,17 @@
     var header = document.querySelector('.parallax-header'); // Changed to use class
     header.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
     });
+</script>
+<script>
+  const seeMoreBtn = document.getElementById('see-more-btn');
+const workDivs = document.querySelectorAll('.work');
+
+seeMoreBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // prevent default link behavior
+    workDivs.forEach(function(div) {
+        div.style.display = div.style.display === 'none' ? 'block' : 'none';
+    });
+});
 </script>
 </body>
 </html>

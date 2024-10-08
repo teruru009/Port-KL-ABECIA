@@ -13,6 +13,11 @@ body {
     color: #fff;
 }
 
+.hidden {
+    display: none;
+}
+
+
 /*---------------bounce------------*/
 .string {
     position: absolute;
@@ -285,7 +290,7 @@ nav ul li a:hover::after {
 }
 
 .work img {
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     display: block;
     overflow: hidden;
